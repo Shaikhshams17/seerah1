@@ -1,0 +1,22 @@
+{
+  "name": "seerah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./seerah-backend/src/index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon ./seerah-backend/src/index.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Seerah",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0",
+    "path": "^0.12.7"
+  }
+}
