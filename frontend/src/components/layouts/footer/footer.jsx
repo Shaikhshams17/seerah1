@@ -27,13 +27,11 @@ const Footer = () => {
 
         {/* Center Section - Company Links */}
         <div className="w-full md:w-1/3 text-center mt-6 md:mt-0">
-          <h3 className="text-lg font-semibold">Company</h3>
+          <h3 className="text-lg font-semibold">Seerah</h3>
           <ul className="mt-3 space-y-2 text-white text-sm">
             <li><Link href="/about" className="hover:text-yellow-300">About</Link></li>
             <li><Link href="/books" className="hover:text-yellow-300">Books</Link></li>
-            <li><Link href="/events" className="hover:text-yellow-300">Events</Link></li>
             <li><Link href="/contact" className="hover:text-yellow-300">Contact Us</Link></li>
-            <li><Link href="/experts" className="hover:text-yellow-300">Experts</Link></li>
           </ul>
         </div>
 
