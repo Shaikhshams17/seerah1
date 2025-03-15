@@ -40,7 +40,7 @@ const Footer = () => {
         {/* Right Section - Arabic Logo & Social Media */}
         <div className="w-full md:w-1/3 text-right mt-6 md:mt-0">
           <Image 
-            src="/arabic-logo.png" // Ensure this Arabic logo is in the 'public' folder
+            src="/button.png" // Ensure this Arabic logo is in the 'public' folder
             alt="Arabic Logo"
             width={80}
             height={40}

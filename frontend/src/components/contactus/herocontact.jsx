@@ -35,10 +35,10 @@ const Contact = () => {
           {/* Contact Details */}
           <div className="flex justify-between text-sm mb-6">
             <div>
-              <p><strong>Phone:</strong> +971 533796554</p>
+              <p><strong>Phone:</strong> +91 98668 23344</p>
             </div>
             <div>
-              <p><strong>Email:</strong> seerah.one@gmail.com</p>
+              <p><strong>Email:</strong> admin@seerah.one</p>
             </div>
           </div>
 

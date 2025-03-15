@@ -18,7 +18,7 @@ const Hero = () => {
       {/* <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div> */}
 
       {/* Hero Text */}
-      <h1 className="relative z-20 text-3xl md:text-5xl text-white font-semibold">ABOUT US</h1>
+      {/* <h1 className="relative z-20 text-3xl md:text-5xl text-white font-semibold">ABOUT US</h1> */}
     </div>
   );
 };

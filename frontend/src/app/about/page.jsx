@@ -1,11 +1,11 @@
 'use client';
 
-import BookSection from "@/components/about/aboutbook/booksection";
-import Author from "@/components/about/author/author";
+import Seerah from "@/components/about/aboutseerah/seerah";
 import Hero from "@/components/about/hero/hero";
-import VolunteerTeam from "@/components/about/team/team";
+import Teams from "@/components/about/team/team";
 import Footer from "@/components/layouts/footer/footer";
 import Navbar from "@/components/layouts/navbar/navbar";
+import Volunteer from "@/components/about/Volunteer/Volunteer";
 
 
 export default function Home() {
@@ -13,11 +13,12 @@ export default function Home() {
     <div>
       <Navbar/>
       <Hero/>
-      <Author/>
-      <BookSection/>
-      <VolunteerTeam/>
+      <Seerah/>
+      <hr className="border-t-2 border-black my-6" />
+      <Teams/>
+      <hr className="border-t-2 border-black my-6" />
+      <Volunteer/>
       <Footer/>
-     
     </div>
   );
 }

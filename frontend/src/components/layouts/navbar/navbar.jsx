@@ -7,14 +7,15 @@ import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  // Mobile dropdown states
   const [isBooksOpen, setBooksOpen] = useState(false);
   const [isEventsOpen, setEventsOpen] = useState(false);
+  const [isAboutOpen, setAboutOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", path: "/" },
     {
       name: "Books",
+      path: "/books",
       dropdown: [
         { name: "Why this book", path: "#why-this-book" },
         { name: "About this book", path: "#why-this-book" },
@@ -25,24 +26,32 @@ export default function Navbar() {
       name: "Events",
       dropdown: [
         { name: "Workshop", path: "#workshop" },
-        { name: "Global Workshop", path: "#" },
+        { name: "Global Event", path: "#" },
       ],
     },
-    { name: "About Us", path: "/about" },
+    {
+      name: "About Us",
+      path: "/about",
+      dropdown: [
+        { name: "Team", path: "#team" },
+        { name: "Volunteer", path: "#volunteer" },
+      ],
+    },
     { name: "Contact Us", path: "/contact" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleBooks = () => setBooksOpen(!isBooksOpen);
   const toggleEvents = () => setEventsOpen(!isEventsOpen);
+  const toggleAbout = () => setAboutOpen(!isAboutOpen);
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-black shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-3 flex justify-between items-center">
-        {/* Left-aligned Logo */}
+        {/* Logo */}
         <Link href="/">
           <Image 
-            src="/logo.png" // Ensure the logo is in the 'public' folder
+            src="/logo.png"
             alt="Logo"
             width={150}
             height={150}
@@ -50,22 +59,28 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop Navigation + Arabic Image (Right Aligned) */}
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
           <ul className="flex space-x-6 text-base font-medium items-center">
             {navLinks.map((link, index) => (
               <li key={index} className="relative group">
                 {link.dropdown ? (
                   <>
-                    {/* Display the nav link text and show dropdown on hover */}
-                    <span className="text-white hover:text-yellow-300 transition-colors cursor-pointer">
+                    {/* Parent link (also clickable if you add a path) */}
+                    <Link 
+                      href={link.path || "#"}
+                      className="text-white hover:text-yellow-300 transition-colors cursor-pointer"
+                    >
                       {link.name}
-                    </span>
-                    <ul className="absolute left-0 mt-2 w-40 bg-black border border-yellow-500 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </Link>
+                    
+                    {/* Dropdown on hover */}
+                    <ul className="absolute left-0 mt-2 w-40 bg-black border border-yellow-500 rounded shadow-lg 
+                                   opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       {link.dropdown.map((sublink, subIndex) => (
                         <li key={subIndex}>
-                          <Link 
-                            href={sublink.path} 
+                          <Link
+                            href={sublink.path}
                             className="block px-4 py-2 text-white hover:bg-yellow-500/20"
                           >
                             {sublink.name}
@@ -75,9 +90,9 @@ export default function Navbar() {
                     </ul>
                   </>
                 ) : (
-                  <Link 
-                    href={link.path} 
-                    className="hover:text-yellow-300 text-white transition-colors"
+                  <Link
+                    href={link.path}
+                    className="text-white hover:text-yellow-300 transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -86,16 +101,15 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Arabic Image Button */}
-          <Link href="/arabic">
-            <Image 
-              src="/button.png" // Ensure the image is in the 'public' folder
-              alt="Arabic Button"
+          {/* Arabic Logo (Desktop) */}
+            <Image
+              src="/button.png"
+              alt="Arabic Logo"
               width={80}
               height={40}
               className="w-24 h-auto object-contain cursor-pointer"
             />
-          </Link>
+         
         </div>
 
         {/* Mobile Menu Button */}
@@ -111,33 +125,36 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (Dropdown) */}
       {isOpen && (
-        <div className="md:hidden bg-blue-900 border-t border-yellow-500">
+        <div className="md:hidden fixed top-[60px] left-0 w-full bg-blue-900 border-t border-yellow-500 z-40">
           <ul className="flex flex-col space-y-2 py-4 px-6 text-yellow-400">
             {navLinks.map((link, index) => (
               <li key={index}>
                 {link.dropdown ? (
-                  <div>
-                    <button 
+                  <>
+                    {/* Toggle sub-menu on button click */}
+                    <button
                       onClick={() => {
-                        if (link.name === "Books") {
-                          toggleBooks();
-                        } else if (link.name === "Events") {
-                          toggleEvents();
-                        }
+                        if (link.name === "Books") toggleBooks();
+                        else if (link.name === "Events") toggleEvents();
+                        else if (link.name === "About Us") toggleAbout();
                       }}
                       className="w-full text-left px-4 py-3 rounded-lg font-medium hover:bg-yellow-500/20 transition-colors"
                     >
                       {link.name}
                     </button>
+
+                    {/* Sub-menu */}
                     {(link.name === "Books" && isBooksOpen) ||
-                    (link.name === "Events" && isEventsOpen) ? (
+                    (link.name === "Events" && isEventsOpen) ||
+                    (link.name === "About Us" && isAboutOpen) ? (
                       <ul className="ml-4 mt-2 space-y-2">
                         {link.dropdown.map((sublink, subIndex) => (
-                          <li key={subIndex} onClick={toggleMenu}>
-                            <Link 
-                              href={sublink.path} 
+                          <li key={subIndex}>
+                            <Link
+                              href={sublink.path}
+                              onClick={toggleMenu}
                               className="block px-4 py-2 rounded-lg hover:bg-yellow-500/20 transition-colors"
                             >
                               {sublink.name}
@@ -146,29 +163,30 @@ export default function Navbar() {
                         ))}
                       </ul>
                     ) : null}
-                  </div>
+                  </>
                 ) : (
-                  <Link 
-                    href={link.path} 
-                    onClick={toggleMenu} 
-                    className="block px-4 py-3 rounded-lg text-base font-medium hover:bg-yellow-500/20 transition-colors"
+                  <Link
+                    href={link.path}
+                    onClick={toggleMenu}
+                    className="block px-4 py-3 rounded-lg font-medium hover:bg-yellow-500/20 transition-colors"
                   >
                     {link.name}
                   </Link>
                 )}
               </li>
             ))}
-            {/* Arabic Image Button for Mobile */}
+
+            {/* Arabic Logo (Mobile) */}
             <li className="mt-2 flex justify-center">
-              <Link href="/arabic">
-                <Image 
-                  src="/button.png" // Ensure the image is in the 'public' folder
-                  alt="Arabic Button"
+              
+                <Image
+                  src="/button.png"
+                  alt="Arabic Logo"
                   width={60}
                   height={30}
                   className="w-20 h-auto object-contain cursor-pointer"
                 />
-              </Link>
+      
             </li>
           </ul>
         </div>
