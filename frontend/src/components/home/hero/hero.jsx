@@ -38,14 +38,13 @@ export default function Hero() {
         <p className="text-lg sm:text-xl md:text-3xl leading-relaxed">
           Indeed, In the Messenger of Allah,
           <br />
-          you have an excellent example
+          you have an excellent example <span className="text-sm">(33:21)</span>
         </p>
 
         {/* Ayah Reference */}
-        <p className="text-sm sm:text-base md:text-lg">(33:21)</p>
 
         {/* Heart Image */}
-        <div className="ml-16">
+        <div className="ml-28">
           <Image
             src="/heart.png"
             alt="Har Heart Mein Muhammad"

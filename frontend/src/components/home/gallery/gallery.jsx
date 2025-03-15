@@ -31,7 +31,7 @@ const Gallery = () => {
               className="h-auto max-w-full transition-transform duration-300 group-hover:scale-105 rounded-lg"
             />
             {/* Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
+            <div className="absolute inset-0 flex items-center justify-center bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50">
               <p className="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {image.name}
               </p>

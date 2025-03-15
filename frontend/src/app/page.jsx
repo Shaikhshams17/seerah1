@@ -16,7 +16,7 @@ export default function Home() {
       <SeerahWorkshop />
       <ZiyaratusSeerah />
       <Books />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Gallery />
       <Footer />
     </div>
