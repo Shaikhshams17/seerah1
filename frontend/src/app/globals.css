@@ -21,3 +21,11 @@ body {
   background: var(--background);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+
+@font-face {
+  font-family: 'AlQalamQuran';
+  src: url('/fonts/AlQalamQuran.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

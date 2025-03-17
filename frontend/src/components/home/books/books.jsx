@@ -44,7 +44,7 @@ export default function SeerahWorkshop() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-gray-700 min-h-screen text-white py-10 px-4 flex flex-col items-center gap-12 relative">
+    <div className="bg-gradient-to-b from-black to-gray-400 min-h-screen text-white py-10 px-4 flex flex-col items-center gap-12 relative">
       {/* --- TOP SECTION --- */}
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left: Mosque Image */}

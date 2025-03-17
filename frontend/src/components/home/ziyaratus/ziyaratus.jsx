@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const ZiyaratusSeerah = () => {
   return (
-    <div className="relative w-full h-screen md:h-[100vh] flex justify-center items-center mb-0 md:mb-12">
+    <div className="relative w-full h-screen md:h-[100vh] flex justify-center items-center mb-12">
       {/* Image visible only on md and above */}
-      <div className="hidden md:block absolute inset-0">
+      <div className="hidden md:block absolute inset-0 ">
         <Image
           src="/ziya.jpg" // Replace with actual background image path
           alt="Ziyaratus Seerah Background"
