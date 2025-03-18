@@ -79,7 +79,7 @@ export default function Navbar() {
                     {/* Parent link (also clickable if you add a path) */}
                     <Link 
                       href={link.path || "#"}
-                      className="text-white hover:text-yellow-300 transition-colors cursor-pointer"
+                      className="text-white hover:text-orange-400 transition-colors cursor-pointer"
                     >
                       {link.name}
                     </Link>
@@ -102,7 +102,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={link.path}
-                    className="text-white hover:text-yellow-300 transition-colors"
+                    className="text-white hover:text-orange-400 transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -127,9 +127,9 @@ export default function Navbar() {
           className="md:hidden p-2 rounded-lg hover:bg-yellow-500/20 transition-colors"
         >
           {isOpen ? (
-            <X className="h-6 w-6 text-yellow-400" />
+            <X className="h-6 w-6 text-orange-400" />
           ) : (
-            <Menu className="h-6 w-6 text-yellow-400" />
+            <Menu className="h-6 w-6 text-orange-400" />
           )}
         </button>
       </div>
