@@ -6,7 +6,7 @@ const ZiyaratusSeerah = () => {
       {/* Image visible only on md and above */}
       <div className="hidden md:block absolute inset-0 ">
         <Image
-          src="/ziya.jpg" // Replace with actual background image path
+          src="/ziya.png" // Replace with actual background image path
           alt="Ziyaratus Seerah Background"
           layout="fill"
           objectFit="cover"

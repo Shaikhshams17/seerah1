@@ -2,7 +2,7 @@
 
 export default function WhyThisBook() {
   return (
-    <div className="bg-white px-4 md:px-8 lg:px-16 xl:px-24 py-8 md:py-12">
+    <div id="whythisbook" className="bg-white px-4 md:px-8 lg:px-16 xl:px-24 py-8 md:py-12">
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
         
         {/* Text Section */}

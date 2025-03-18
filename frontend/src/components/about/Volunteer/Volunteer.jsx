@@ -1,6 +1,6 @@
 export default function Volunteer() {
   return (
-    <div className="px-4 md:px-16 lg:px-24 py-8">
+    <div id="volunteer" className="px-4 md:px-16 lg:px-24 py-8">
       <h2 className="text-2xl md:text-3xl font-bold mb-4">
         Join the Seerah One Volunteer Team!
       </h2>

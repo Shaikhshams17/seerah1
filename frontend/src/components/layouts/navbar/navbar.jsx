@@ -17,13 +17,14 @@ export default function Navbar() {
       name: "Books",
       path: "/books",
       dropdown: [
-        { name: "Why this book", path: "#why-this-book" },
-        { name: "About this book", path: "#why-this-book" },
+        { name: "Why this book", path: "#whythisbook" },
+        { name: "About this book", path: "#aboutthisbook" },
         { name: "Author", path: "#author" },
       ],
     },
-    { 
+    {
       name: "Events",
+      // Note: no parent path here because "Workshop" is on the home page.
       dropdown: [
         { name: "Workshop", path: "#workshop" },
         { name: "Global Event", path: "#" },
@@ -44,6 +45,15 @@ export default function Navbar() {
   const toggleBooks = () => setBooksOpen(!isBooksOpen);
   const toggleEvents = () => setEventsOpen(!isEventsOpen);
   const toggleAbout = () => setAboutOpen(!isAboutOpen);
+
+  // Updated helper: if no parentPath is provided and the sublink path is an anchor,
+  // default to the home page ("/").
+  const getSublinkHref = (parentPath, sublinkPath) => {
+    if (sublinkPath.startsWith("#")) {
+      return (parentPath ? `${parentPath}${sublinkPath}` : `/${sublinkPath}`);
+    }
+    return sublinkPath;
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-black shadow-lg z-50">
@@ -80,7 +90,7 @@ export default function Navbar() {
                       {link.dropdown.map((sublink, subIndex) => (
                         <li key={subIndex}>
                           <Link
-                            href={sublink.path}
+                            href={getSublinkHref(link.path, sublink.path)}
                             className="block px-4 py-2 text-white hover:bg-yellow-500/20"
                           >
                             {sublink.name}
@@ -102,15 +112,13 @@ export default function Navbar() {
           </ul>
 
           {/* Arabic Logo (Desktop) */}
-            
-            <Image
-              src="/button.png"
-              alt="Arabic Logo"
-              width={80}
-              height={40}
-              className="w-24 h-auto object-contain cursor-pointer"
-            />
-         
+          <Image
+            src="/button.png"
+            alt="Arabic Logo"
+            width={80}
+            height={40}
+            className="w-24 h-auto object-contain cursor-pointer"
+          />
         </div>
 
         {/* Mobile Menu Button */}
@@ -154,7 +162,7 @@ export default function Navbar() {
                         {link.dropdown.map((sublink, subIndex) => (
                           <li key={subIndex}>
                             <Link
-                              href={sublink.path}
+                              href={getSublinkHref(link.path, sublink.path)}
                               onClick={toggleMenu}
                               className="block px-4 py-2 rounded-lg hover:bg-yellow-500/20 transition-colors"
                             >
@@ -179,15 +187,13 @@ export default function Navbar() {
 
             {/* Arabic Logo (Mobile) */}
             <li className="mt-2 flex justify-center">
-              
-                <Image
-                  src="/button.png"
-                  alt="Arabic Logo"
-                  width={60}
-                  height={30}
-                  className="w-20 h-auto object-contain cursor-pointer"
-                />
-      
+              <Image
+                src="/button.png"
+                alt="Arabic Logo"
+                width={60}
+                height={30}
+                className="w-20 h-auto object-contain cursor-pointer"
+              />
             </li>
           </ul>
         </div>

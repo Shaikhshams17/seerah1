@@ -4,11 +4,11 @@ import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-900 to-gray-500 text-white px-6 py-12">
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-b from-black to-gray-400 p-8 relative mt-24">
+      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 bg-gray-400 p-12 relative mt-24">
         
         {/* Left Side - Images */}
         <div className="flex space-x-6 justify-center">
-          <div className="w-28 md:w-32 h-80 md:h-96 rounded-2xl overflow-hidden">
+          <div className="w-28 md:w-48 h-80 md:h-96 rounded-2xl overflow-hidden">
             <Image
               src="/contact2.jpg" 
               alt="Workshop Image"
@@ -17,7 +17,7 @@ const Contact = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-28 md:w-32 h-80 md:h-96 rounded-2xl overflow-hidden">
+          <div className="w-28 md:w-52 h-80 md:h-96 rounded-2xl overflow-hidden">
             <Image
               src="/workshop.jpg"
               alt="Contact Image"

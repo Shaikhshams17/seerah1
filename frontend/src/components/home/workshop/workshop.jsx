@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const SeerahWorkshop = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -55,12 +56,12 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
       {/* Heading Section */}
       <div className="text-center mb-8">
         <h2 className="text-xl md:text-4xl text-black font-bold uppercase">
-          HOW MUCH DO YOU LOVE THE PROPHET? <span >(ﷺ)</span>
+          HOW MUCH DO YOU LOVE THE PROPHET? <span>(ﷺ)</span>
         </h2>
-        <h3 className="text-lg md:text-3xl text-[#FFDD59] font-semibold uppercase mt-1">
+        <h3 className="text-lg md:text-3xl text-[#f18720] font-semibold uppercase mt-1">
           TRANSFORMING LIVES THROUGH THE SEERAH
         </h3>
-        <h1  className="text-2xl md:text-3xl text-black font-bold mt-3 uppercase">
+        <h1 className="text-2xl md:text-3xl text-black font-bold mt-3 uppercase">
           INTRODUCTION TO THE SEERAH – WORKSHOP
         </h1>
       </div>
@@ -73,7 +74,7 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
             <div key={index} className="accordion-item">
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full text-left font-semibold text-black flex justify-between items-center py-4 px-6 bg-[#f6e865] rounded-lg hover:bg-white hover:text-black transition duration-300 ease-in-out"
+                className="w-full text-left font-semibold text-black flex justify-between items-center py-4 px-6 bg-[#f18720] rounded-lg hover:bg-white hover:text-black transition duration-300 ease-in-out"
               >
                 {item.question}
                 <span className="text-2xl">{openIndex === index ? "▲" : "▼"}</span>
@@ -82,9 +83,11 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
                 <div className="mt-4 text-black px-6 py-4 bg-[#F4F4F9] rounded-lg shadow-md">
                   <p className="text-sm md:text-base whitespace-pre-line">{item.answer}</p>
                   {item.button && (
-                    <button className="mt-4 px-6 py-3 bg-black text-white font-semibold rounded-lg shadow-md hover:bg-[#e27613] transition duration-300 ease-in-out">
-                      {item.button}
-                    </button>
+                    <Link href="/contact">
+                      <button className="mt-4 px-6 py-3 bg-black text-white font-semibold rounded-lg shadow-md hover:bg-[#f18720] transition duration-300 ease-in-out">
+                        {item.button}
+                      </button>
+                    </Link>
                   )}
                 </div>
               )}
@@ -93,12 +96,7 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
         </div>
 
         {/* Right Image Section */}
-        {/* Right Image Section */}
         <div className="w-full flex justify-center items-center">
-          {/* 
-            Parent container with dynamic height 
-            Image sticks to the bottom and grows from the top
-          */}
           <div
             className={`
               relative overflow-hidden rounded-xl shadow-lg transition-all 
@@ -115,8 +113,6 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
             />
           </div>
         </div>
-
-
       </div>
     </div>
   );
