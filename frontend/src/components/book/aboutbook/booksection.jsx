@@ -8,7 +8,7 @@ export default function AboutBook() {
             <img
               src="/book.jpg" // Replace with the actual image name in the public folder
               alt="Muhammad (pbuh) Book Cover"
-              className="w-[40vh] h-[50vh] rounded-lg shadow-md md:ml-24"
+              className="w-[40vh] h-[60vh] rounded-lg shadow-md md:ml-20"
             />
           </div>
   

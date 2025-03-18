@@ -22,7 +22,7 @@ export default function Navbar() {
         { name: "Author", path: "#author" },
       ],
     },
-    {
+    { 
       name: "Events",
       dropdown: [
         { name: "Workshop", path: "#workshop" },
@@ -102,6 +102,7 @@ export default function Navbar() {
           </ul>
 
           {/* Arabic Logo (Desktop) */}
+            
             <Image
               src="/button.png"
               alt="Arabic Logo"

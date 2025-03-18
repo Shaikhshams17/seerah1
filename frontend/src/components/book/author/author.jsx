@@ -27,7 +27,7 @@ export default function Author() {
           {/* Author Image */}
           <div>
             <img
-              src="/team/team4.png" // Replace with your actual image path in the public folder
+              src="/team/team5.png" // Replace with your actual image path in the public folder
               alt="Mohammed Yunus"
               className="w-[60vh] h-auto rounded-lg shadow-md md:ml-24"
             />

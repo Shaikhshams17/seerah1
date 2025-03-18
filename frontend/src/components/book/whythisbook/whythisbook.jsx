@@ -7,7 +7,7 @@ export default function WhyThisBook() {
         
         {/* Text Section */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-lg md:text-xl font-semibold text-black mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Why this book
           </h2>
 

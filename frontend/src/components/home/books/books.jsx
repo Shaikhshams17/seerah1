@@ -71,11 +71,8 @@ export default function SeerahWorkshop() {
             <br />
             <span className="font-semibold">Qur'an 3:31</span>
           </p>
-          <p className="text-sm md:text-base leading-relaxed">
-            Experience an engaging narrative of Prophet Muhammad's (ﷺ) life, 
-            from pre-birth Jahiliyyah to his noble birth, prophethood, 
-            challenges in Makkah, inspiring the Sahaba, migration to Madinah, 
-            triumphant return to Makkah, and his passing after fulfilling his mission.
+          <p className="text-md md:text-base leading-relaxed">
+          Experience an engaging narrative of Prophet Muhammad's (ﷺ) life, from pre-birth during the age of Jahiliyyah to his noble birth, Prophethood, challenges in Makkah, inspiring the Sahaba, migration to Madinah, Fatah Makkah, and his passing after fulfilling his mission.
           </p>
         </div>
       </div>

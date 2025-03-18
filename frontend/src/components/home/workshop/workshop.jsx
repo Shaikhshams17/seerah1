@@ -51,16 +51,16 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-[#F4F4F9] px-4 py-12">
+    <div id="workshop" className="flex flex-col items-center min-h-screen bg-[#F4F4F9] px-4 py-12">
       {/* Heading Section */}
       <div className="text-center mb-8">
-        <h2 className="text-xl md:text-3xl text-black font-bold uppercase">
-          HOW MUCH DO YOU LOVE THE PROPHET? <span className="text-[#0B4F9A]">(ﷺ)</span>
+        <h2 className="text-xl md:text-4xl text-black font-bold uppercase">
+          HOW MUCH DO YOU LOVE THE PROPHET? <span >(ﷺ)</span>
         </h2>
-        <h3 className="text-lg md:text-2xl text-[#FFDD59] font-semibold uppercase mt-1">
+        <h3 className="text-lg md:text-3xl text-[#FFDD59] font-semibold uppercase mt-1">
           TRANSFORMING LIVES THROUGH THE SEERAH
         </h3>
-        <h1 id="workspace" className="text-2xl md:text-3xl text-black font-bold mt-3 uppercase">
+        <h1  className="text-2xl md:text-3xl text-black font-bold mt-3 uppercase">
           INTRODUCTION TO THE SEERAH – WORKSHOP
         </h1>
       </div>
@@ -93,12 +93,11 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
         </div>
 
         {/* Right Image Section */}
+        {/* Right Image Section */}
         <div className="w-full flex justify-center items-center">
           {/* 
-            The parent container is given a dynamic height 
-            so the image grows from both top & bottom. 
-            Using 'relative' + 'Image fill' ensures the image 
-            stays centered and scales smoothly.
+            Parent container with dynamic height 
+            Image sticks to the bottom and grows from the top
           */}
           <div
             className={`
@@ -109,13 +108,15 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
             `}
           >
             <Image
-              src="/workshop.png"
+              src="/workshop.jpg"
               alt="Seerah Workshop"
               fill
-              className="object-cover object-center"
+              className="object-cover object-bottom"
             />
           </div>
         </div>
+
+
       </div>
     </div>
   );
