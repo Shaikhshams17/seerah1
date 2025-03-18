@@ -32,7 +32,7 @@ export default function Volunteer() {
       <p className="text-gray-700 mb-4">
         Write to us and tell us a bit about yourself—what you're good at and how you'd like to contribute. Together, let's make a lasting impact and bring the lessons of the Seerah to more people. 
         <a href="/contact" className="text-blue-600 underline hover:text-blue-800 transition">
-          support@seerah.one
+          admin@seerah.one
         </a>
         . We can't wait to hear from you!
       </p>
