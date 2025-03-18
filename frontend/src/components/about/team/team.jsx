@@ -11,8 +11,8 @@ export default function Teams() {
       image: "/team/team2.jpg",
     },
     {
-      name: "Asif Khan",
-      title: "Hafiz, Aalim\nKhateeb & Imam at Masjid Alquba\nShampur Road Bangalore",
+      name: "Maulana Asif Khan",
+      title: "Imam & Khateeb at Masjid Alquba\nShampur Road Bangalore",
       image: "/team/team1.jpg",
     },
     {
