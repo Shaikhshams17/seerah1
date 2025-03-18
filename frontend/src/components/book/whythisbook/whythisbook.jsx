@@ -6,7 +6,7 @@ export default function WhyThisBook() {
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
         
         {/* Text Section */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 mt-24">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Why this book
           </h2>
@@ -32,7 +32,7 @@ export default function WhyThisBook() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 mt-24">
           <img 
             src="/book.jpg" 
             alt="Seerah Book" 

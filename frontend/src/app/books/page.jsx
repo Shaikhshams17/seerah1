@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <HeroBook/>
+      {/* <HeroBook/> */}
       <WhyThisBook/>
       <hr className="border-t-2 border-black my-6" />
       <AboutBook/>

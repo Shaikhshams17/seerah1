@@ -1,7 +1,7 @@
 export default function Seerah() {
   return (
     <div className="px-4 md:px-16 lg:px-24 py-8">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">About Us</h2>
+      <h2 className="text-2xl md:text-3xl text-center font-bold mb-4 mt-24">About Us</h2>
       
       <p className="text-gray-700 mb-4">
         Indeed, In the Messenger of Allah, you have an excellent example for whoever has hope in Allah and the last day and remembers Allah often (33:21).

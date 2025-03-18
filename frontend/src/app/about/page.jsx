@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <Hero/>
+      {/* <Hero/> */}
       <Seerah/>
       <hr className="border-t-2 border-black my-6" />
       <Teams/>

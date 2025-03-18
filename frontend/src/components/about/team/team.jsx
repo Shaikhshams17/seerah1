@@ -6,19 +6,19 @@ export default function Teams() {
       name: "Mohammed Yunus",
       title: "Founder Seerah One",
       image: "/team/team5.png",
-      linkedin: "https://www.linkedin.com/in/mohammed-yunus",
+      linkedin: "https://www.linkedin.com/in/mohammed-yunus-4216704?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Zakeer Hussain",
       title: "Founder Thecognate",
       image: "/team/team2.jpg",
-      linkedin: "https://www.linkedin.com/in/zakeer-hussain",
+      linkedin: "https://www.linkedin.com/in/shaikzakeerhussain?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Sameer Barde",
       title: "Senior Manager HP",
       image: "/team/team3.jpg",
-      linkedin: "https://www.linkedin.com/in/sameer-barde",
+      linkedin: "https://www.linkedin.com/in/sameer-barde-84a57413?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Maulana Asif Khan",
