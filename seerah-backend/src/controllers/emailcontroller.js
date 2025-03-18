@@ -19,7 +19,7 @@ export const sendEmail = async (req, res) => {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: email,
-      subject: "Your Free Seerah Book",
+      subject: "SEERAH:Discover the extraordinary life of Prophet Muhammad (ﷺ) and his transformative impact on society.",
       text: `Thank you for downloading Muhammad(ﷺ): Love, Humility, and Compassion.
 
 This book is designed to engage today’s youth with its concise format. Short lessons and multiple-choice questions. That aims to reinforce key learnings and retain the knowledge they gain.

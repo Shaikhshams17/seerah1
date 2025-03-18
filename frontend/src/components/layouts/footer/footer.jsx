@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -46,13 +46,14 @@ const Footer = () => {
           />
           <p className="text-white text-sm">Connect with us on social media for more insights.</p>
           <div className="flex justify-end space-x-4 mt-3">
-            <Link href="https://instagram.com" target="_blank">
+            <Link href="https://www.instagram.com/seerah.one" target="_blank">
               <FaInstagram className="text-white text-xl hover:text-yellow-300" />
             </Link>
-            <Link href="https://twitter.com" target="_blank">
-              <FaTwitter className="text-white text-xl hover:text-yellow-300" />
-            </Link>
-            <Link href="https://facebook.com" target="_blank">
+            <Link href="https://www.linkedin.com/in/seerah_one" target="_blank">
+             <FaLinkedin className="text-white text-xl hover:text-yellow-300" />
+              </Link>
+
+            <Link href="https://www.facebook.com/seerah.one" target="_blank">
               <FaFacebook className="text-white text-xl hover:text-yellow-300" />
             </Link>
           </div>
