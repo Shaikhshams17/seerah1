@@ -26,12 +26,12 @@ export default function Teams() {
       image: "/team/team1.jpg",
       linkedin: "https://www.linkedin.com/in/maulana-asif-khan",
     },
-    {
-      name: "Fifth Member",
-      title: "Title for Fifth Member",
-      image: "/team/team4.jpg",
-      linkedin: "https://www.linkedin.com/in/fifth-member",
-    },
+    // {
+    //   name: "Fifth Member",
+    //   title: "Title for Fifth Member",
+    //   image: "/team/team4.jpg",
+    //   linkedin: "https://www.linkedin.com/in/fifth-member",
+    // },
   ];
 
   // Split the team into two groups: first 3 and last 2

@@ -85,7 +85,7 @@ export default function SeerahWorkshop() {
             A MUST-READ FOR EVERY YOUNG MUSLIM
           </h3>
           <p className="font-semibold text-xl">
-            Muhammad (ﷺ) – An Example of love, Humility, and compassion.
+            Muhammad (ﷺ) – An Exemplar of love, Humility, and compassion.
           </p>
           <p className="text-sm md:text-base leading-relaxed">
             An inspirational journey to learn the Seerah,

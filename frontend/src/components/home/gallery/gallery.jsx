@@ -10,7 +10,7 @@ const Gallery = () => {
     { src: "/gallery/5.jpeg", name: "Nazim Farooqui" },
     // { src: "/gallery/13.jpeg", name: "Zaheer Uddin Ali Khan - Siasat Media" },
     { src: "/gallery/9.jpeg", name: "Zaheer Uddin Ali Khan - Siasat Media" },
-    { src: "/gallery/14.jpg", name: "Qadeer Sahab-Founder of shaheen group" },
+    { src: "/gallery/14.jpg", name: "Qadeer Sahab-Founder of Shaheen group" },
     { src: "/gallery/15.jpg", name: "Moulana Yunus Nadvi" },
     { src: "/gallery/11.jpeg", name: "Asif Mujtaba  miles2smiles" },
     { src: "/gallery/1.jpeg", name: "Zahed Ali Khan - Siasat Media" }

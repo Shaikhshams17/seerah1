@@ -55,14 +55,14 @@ While His (ﷺ) ability to navigate difficult situations with ease, fairness, an
     <div id="workshop" className="flex flex-col items-center min-h-screen bg-[#F4F4F9] px-4 py-12">
       {/* Heading Section */}
       <div className="text-center mb-8">
-        <h2 className="text-xl md:text-4xl text-black font-bold uppercase">
-          HOW MUCH DO YOU LOVE THE PROPHET? <span>(ﷺ)</span>
+        <h2 className="text-xl md:text-4xl text-black font-bold ">
+          How Much Do You Love The Prophet <span>(ﷺ)</span>
         </h2>
-        <h3 className="text-lg md:text-3xl text-[#f18720] font-semibold uppercase mt-1">
-          TRANSFORMING LIVES THROUGH THE SEERAH
+        <h3 className="text-lg md:text-3xl text-[#f18720] font-semibold  mt-1">
+           Transforming Lives Through The Seerah
         </h3>
-        <h1 className="text-2xl md:text-3xl text-black font-bold mt-3 uppercase">
-          INTRODUCTION TO THE SEERAH – WORKSHOP
+        <h1 className="text-2xl md:text-3xl text-black font-bold mt-3 ">
+          Introduction To The Seerah - Workshop
         </h1>
       </div>
 
