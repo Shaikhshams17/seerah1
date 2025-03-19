@@ -28,9 +28,8 @@ export default function Seerah() {
       </p>
 
       <p className="text-gray-700 mb-4">
-        Join us on this journey of learning and growth!{' '}
-        <a href="#" className="text-blue-600 underline hover:text-blue-800 transition">
-          (clickable)
+        <a href="/contact" className="text-blue-600 hover:text-blue-800 transition">
+          Join us on this journey of learning and growth!
         </a>
       </p>
 

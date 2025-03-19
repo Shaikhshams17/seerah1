@@ -49,11 +49,11 @@ const Footer = () => {
             <Link href="https://www.instagram.com/seerah.one" target="_blank">
               <FaInstagram className="text-white text-xl hover:text-yellow-300" />
             </Link>
-            <Link href="https://www.linkedin.com/in/seerah_one" target="_blank">
+            <Link href="https://www.linkedin.com/company/seerah-education-and-learning/" target="_blank">
              <FaLinkedin className="text-white text-xl hover:text-yellow-300" />
               </Link>
 
-            <Link href="https://www.facebook.com/seerah.one" target="_blank">
+            <Link href="https://www.facebook.com/profile.php?id=100084582308830" target="_blank">
               <FaFacebook className="text-white text-xl hover:text-yellow-300" />
             </Link>
           </div>

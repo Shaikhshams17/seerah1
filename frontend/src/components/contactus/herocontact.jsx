@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-900 to-gray-500 text-white px-6 py-12">
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 bg-gray-400 p-12 relative mt-24">
+      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-b from-black to-gray-400 p-12 relative mt-24">
         
         {/* Left Side - Images */}
         <div className="flex space-x-6 justify-center">
@@ -54,12 +54,24 @@ const Contact = () => {
               placeholder="EMAIL"
               className="w-full p-3 bg-black text-white rounded-md border border-gray-600 focus:outline-none focus:border-blue-400"
             />
+            <select
+              className="w-full p-3 bg-black text-white rounded-md border border-gray-600 focus:outline-none focus:border-blue-400"
+            >
+              <option value="" disabled selected>Select a Topic</option>
+              <option value="seerah">Why should Every Muslim Learn the Seerah of The Prophet (ﷺ)?</option>
+              <option value="return">Return to your Rabb - In Pursuit of Allah’s Pleasure</option>
+              <option value="imaan">The Imaan Challenge Workshop</option>
+              <option value="leadership">Leadership Styles and Lessons from the Prophet (ﷺ)</option>
+              <option value="ziyaratus">Ziyaratus Seerah</option>
+              <option value="volunteer">Volunteer</option>
+              <option value="query">Query</option>
+            </select>
             <textarea
               placeholder="MESSAGE"
               rows="4"
               className="w-full p-3 bg-black text-white rounded-md border border-gray-600 focus:outline-none focus:border-blue-400"
             ></textarea>
-            <button className="w-40 bg-black text-white py-3 rounded-md hover:bg-gray-800 transition">
+            <button className="w-40 bg-black text-white py-3 rounded-md hover:bg-gray-900 transition">
               Send Message
             </button>
           </form>
@@ -71,21 +83,21 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="text-2xl hover:text-blue-400" />
+              <FaInstagram className="text-2xl hover:text-orange-400" />
             </a>
             <a
-              href="https://www.facebook.com/seerah.one"
+              href="https://www.facebook.com/profile.php?id=100084582308830"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="text-2xl hover:text-blue-400" />
+              <FaFacebook className="text-2xl hover:text-orange-400" />
             </a>
             <a
-              href="https://www.linkedin.com/in/seerah_one"
+              href="https://www.linkedin.com/company/seerah-education-and-learning/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-2xl hover:text-blue-400" />
+              <FaLinkedin className="text-2xl hover:text-orange-400" />
             </a>
           </div>
         </div>
